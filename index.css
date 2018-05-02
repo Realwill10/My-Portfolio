@@ -1,0 +1,301 @@
+/* Main CSS Layout for Mobile - Top Down  */
+body {
+  font-family: arial;
+
+}
+
+body .landing-title {
+  background: url(https://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 0.8;
+}
+
+h1 {
+  text-align: center;
+}
+
+a { color: inherit; }
+
+/* Navigation CSS */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 6;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.navbar-nav{
+  display: none;
+}
+nav span {
+  margin-right: 15px;
+}
+.side-nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  transition: 0.3s;
+  padding-bottom: 35px;
+}
+
+.side-nav a:hover {
+  color: #ccc;
+}
+
+/* .side-nav .btn-close{
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+} */
+
+/*Landing Page CSS  */
+
+.landing-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 400px;
+  text-align: center;
+  color: rgb(25, 200, 153);
+text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+z-index: 0;
+}
+
+.landing-title h1  {
+  font-size: 50px;
+  margin: 100px 16px 0px 16px;
+}
+
+.landing-title h3 {
+  margin-top: 10px;
+}
+
+/* Introduction CSS */
+
+.skills-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: rgb(241, 249, 251)
+    color: rgb(91, 91, 91);
+}
+.skills-title h1  {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.skills-container{
+  margin-bottom: 30px;
+}
+
+.skill-1, .skill-2, .skill-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.images {
+  height: 150px;
+  width: 150px;
+  margin: 50px
+}
+
+  /* Skills Section */
+
+.Projects {
+  background-color: rgb(42, 42, 43);
+  color: white;
+  padding: 20px 25px;
+}
+
+.Projects h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+.project-images {
+  height: 300px;
+  width: 360px;
+  margin: 30px 20px;
+  border: 5px rgb(128, 128, 128) solid;
+}
+
+
+/*  Contact Form*/
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+form {
+  width: 80%;
+}
+
+#message {
+  padding: 70px 0px;
+}
+
+button {
+  margin: auto;
+}
+
+/* Footer */
+ footer {
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(21, 31, 52);
+   color: white;
+   height: 150px;
+   text-align: center;
+ }
+
+ footer p {
+   display: flex;
+   justify-content: center;
+ }
+
+ .social-media-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-bottom: 25px;
+
+ }
+
+ .social-media-container span {
+   padding: 20px;
+ }
+
+/******************************************************************************/
+ /* MEDIA QUERIES */
+
+@media (min-width: 1080px) {
+
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+  }
+.navbar-links li {
+  font-size: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.open-slide {
+  display: none;
+  }
+
+.skills-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
+}
+
+.skills-title p {
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.skills-title h2 {
+  padding-bottom:
+  margin-bottom: 0px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 75%;
+}
+
+.skill-1, .skill-2, .skill-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* width: 75%; */
+  /* margin: auto; */
+  background-color: rgb(42, 42, 43);
+  color: white;
+}
+
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 75%;
+
+}
+
+.project-images{
+  margin: 35px 15px ;
+  flex-grow: 1;
+}
+
+form {
+  width: 45%;
+}
+
+
+
+}
